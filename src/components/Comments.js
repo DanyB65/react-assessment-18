@@ -25,7 +25,7 @@ const Comments = () => {
 
     return(
         <div>
-       {data.map((current)=>(
+       {data && data.map((current)=>(
         <li key={current.id} onClick={()=> console.log(current.id)}
         >{current.body}</li>
        ))}
